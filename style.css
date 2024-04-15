@@ -21,14 +21,14 @@ body {
     align-items: center;
     z-index: 100;
 }
-.navbar a {
+#navbar a {
     font-size: 20px;
     color: black;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
 }
-.navbar a:hover {
+#navbar a:hover {
     color: whitesmoke;
 }
 .logo {
@@ -44,21 +44,24 @@ body {
 .video-container iframe {
     position: absolute;
     top: 3cm;
-    left: 10px;
     width: 100%;
     height: 100%;
 }
 .home {
     margin-top: 2cm;
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
-    padding: 0 7%;
 }
 .home-content {
-    max-width: 600px;  
+    max-width: 600px;
+    padding: 0 7%;
 }
 .home-content h1 {
+    background-color: powderblue;
+    border-radius: 10px;
+    width: 45%;
+    color: #081b29;
     font-size: 25px;
     font-weight: 600px;
 }
@@ -66,26 +69,28 @@ body {
     font-size: 18px;
     font-weight: 600px;
 }
-.home-image{
+.home-image {
     position: relative;
-    left: 8cm;
+    left: 400px;
     clip-path: circle(49%);
     border-radius: 50%;
 }
-.address{
+.address {
     position: absolute;
     top: 11cm;
-    width: 100px;
+    width:100%;
     display: flex;
     align-items: center;
     font-size: small;
+    padding: 0 7%;
 }
-.address-content{
+.address-content {
     position: absolute;
     top: 11.7cm;
     width: 150px;
     align-items: center;
     font-size: 15px;
+    padding: 0 7%;
 }
 .home-smi {
     position: absolute;
@@ -93,6 +98,7 @@ body {
     width: 200px;
     display: flex;
     justify-content: space-between;
+    padding: 0 7%;
 }
 .home-smi a {
     margin-bottom: 1cm;
@@ -111,30 +117,168 @@ body {
     color: yellow;
 }
 .map {
-    position: absolute;
-    top: 11cm;
-    right: 0.5cm;
+    position: relative;
+    top: 300px;
+    left: 100px;
     clip-path: circle(68%);
 }
-.Phone p{
-    position: relative;
-    align-items: center;
-    display: flex;
-    top: 11cm;
-    right: 10cm;
-}
-.aboutme {
+.contact-container h1 {
+    background-color: powderblue;
+    border-radius: 10px;
+    width: 15%;
+    color: #081b29;
     margin-top: 5cm;
     position: relative;
+    padding: 0 5px;
+    left: 75px;
+}
+.contact-container p{
+    position: relative;
+    padding: 0 75px;
+
+}
+.contact-form {
+    padding: 20px 75px;
+}
+.contact-form .form-group{ 
+    padding-bottom: 8px;
+}
+.contact-form label {
+    display: block;
+    padding-bottom: 10px;
+}
+.contact-form .form-group input {
+    width:30%;
+}
+.contact-form textarea {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.contact-form .button {
+    width: 30%;
+    color: antiquewhite;
+}
+.button a {
+    width: 30%;
+    height: 100%;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 2px 3px;
+    color:antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: blueviolet;  
+}
+.button a:hover {
+    background-color: red;
+    color: yellow;
+}
+.location {
+    position: relative;
+    width: 30px;
+    height: 30px;
     display: flex;
-    align-items: center;
+    left: 700px;
+    bottom: 340px;
+    justify-content: center;
+    
+}
+.location a {
+    margin-bottom: 1cm;
+    justify-content: right;
+    background: transparent;
+    border: 4px solid antiquewhite;
+    border-radius: 50%;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    color: blueviolet;
+}
+.location a:hover {
+    background-color: red;
+    color: yellow;
+}
+.location-content p{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    display: inline;
+    left: 760px;
+    bottom: 347px;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.Phone p {
+    position: absolute;
+    top: 15cm;
+    right: 300px;
+    width: 200px;
+    justify-content: space-between;
+    background-color: powderblue;
+    width: 20%;
+    color: #081b29;
+    font-size: 25px;
+    border-radius: 10px;
+    
+}
+.about-container {
+    margin-top: 5cm;
+    position: relative;
     padding: 0 7%;
+    max-width: 500px;
 }
 .about-container h1 {
+    background-color: powderblue;
+    border-radius: 10px;
+    width: 40%;
+    color: #081b29;
     font-size: 40px;
     font-weight: 600px;
+   
 }    
 .about-container p {
     font-size: 20px;
-    font-weight: 600px
+    font-weight: 600px;
+    border-right: antiquewhite solid 2px;
+    padding-right: 10px;
+}
+.aboutme-info{
+   position: absolute;
+   left:650px;
+   top: 177px;
+
+}
+.aboutme-info h1{
+    background-color: powderblue;
+    width: 35%;
+    color: #081b29;
+    font-size: 30px;
+    font-weight: 600px;
+    border-radius: 10px;
+}
+.aboutme-info h2{
+    background-color: powderblue;
+    width: 28%;
+    color: #081b29;
+    font-size: 30px;
+    font-weight: 600px;
+    border-radius: 10px;
+}
+.aboutme-info h3 {
+    background-color: powderblue;
+    width: 30%;
+    color: #081b29;
+    font-size: 30px;
+    font-weight: 600px;
+    border-radius: 10px;
+}
+.aboutme-info h4{
+    background-color: powderblue;
+    width: 22%;
+    color: #081b29;
+    font-size: 30px;
+    font-weight: 600px;
+    border-radius: 10px;
 }
