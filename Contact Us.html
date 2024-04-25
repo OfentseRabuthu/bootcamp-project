@@ -2,29 +2,59 @@
 <html>
 <head>
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo"><img src="./logo.jpg" height="100" width="100"></a>
 
-        <nav class="navbar">
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="About me.html">About me</a>
-            <a href="Contact Us.html">Contact Us</a>
+            <a href="#">Contact Us</a>
         </nav>
     </header>
     
         <div class="contact-container">
             <h1>Contact Us.</h1>
             <p>Please contact us on the information below.</p>
-            <p1><b>Phone</b><br> 060 669 5279<br><br></p1>
-            <p2><b>Email</b><br> o.rabuthu@gmail.com<br><br></p2>
-             <p3><b>Address</b><br>60 Wildcat Crescent,
-                Montana Park,
-                Pretoria,
-                Gauteng,
-                0150.</p3>
+        
+        
+        <form onsubmit = "handleFormSubmit(event)"
+        >
+            <label id="name-label">Name:
+                <input id="fullname" name="name" placeholder="John Doe">
+                <label id ="name-span" name = "span"></label>
+                
+            </label>
+                
+
+            <label id="email-label">Email:
+                <input id="email" type="email" name="email" placeholder="johndoe@gmail.com"> 
+                <label id ="email-span" name = "span"></label>
+            </label> 
+                
+
+            <label id="message-label">Message:
+                <textarea id="message" name="message" placeholder="type here..."></textarea>
+                <label id ="message-span" name = "span"></label>
+            </label>
+
+            <!-- your other form fields go here --> 
+
+            <button type="submit">Send</button>
+
+        </form>
         </div>
+    <div class="location"><a href="https://maps.google.com/maps?ll=-25.671558,28.252221&z=14&t=m&hl=en&gl=ZA&mapclient=embed&q=25%C2%B040%2717.6%22S%2028%C2%B015%2708.0%22E%20-25.671556%2C%2028.252222@-25.6715556,28.2522222"><i class='bx bxs-location-plus bx-tada' ></i>
+    </div>
+
+   <div class="location-content">
+    <p>Pretoria, Gauteng</p>
+    </div>
+
+    <script src="Contact Us.js"></script>
 </body>
 </html>
