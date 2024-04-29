@@ -23,7 +23,7 @@ function handleFormSubmit(event) {
         console.log(isMessageValid)
     }
     
-    const isEmailValid = emailInput.value !== '' && emailInput.validity.valid;
+    const isEmailValid = emailInput.value.trim() !== '' && emailInput.validity.valid;
     
     if(isEmailValid) { 
         const emailSpan = document.getElementById('email-span');
